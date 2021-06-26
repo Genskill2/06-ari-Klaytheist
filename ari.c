@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <ctype.h>
 #include <math.h>
+#include <string.h>
+
 string ari(string s)
 {
     string grade_level[] = {"Kindergarten", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
