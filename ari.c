@@ -1,4 +1,7 @@
 #include <cs50.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
 
 string ari(string s)
 {
