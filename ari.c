@@ -20,5 +20,5 @@ string ari(string s)
     ARI = ceil((4.71*(characters/words))+(0.5*(words/sentences)) - 21.43);
     if(ARI > 14)
         return "Professor";
-    return grade_level[int(ari-1)];
+    return grade_level[(int)(ari-1)];
 }
