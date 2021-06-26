@@ -43,6 +43,6 @@ string ari(string s)
         return "Twelfth Grade";
     else if(ARI == 13)
         return "College Student";
-    else if(ARI > 14)
+    else if(ARI == 14)
         return "Professor";
 }
