@@ -2,7 +2,7 @@
 
 string ari(string s)
 {
-    string case[] = {"Kindergarten", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade",
+    string grade_level[] = {"Kindergarten", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade",
                      "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
     float characters = 0, words = 0, sentences = 0, ARI;
     for(int i = 0 ; i < strlen(s) ; i++)
@@ -18,5 +18,5 @@ string ari(string s)
     ARI = ceil((4.71*(characters/words))+(0.5*(words/sentences)) - 21.43);
     if(ARI > 14)
         return "Professor";
-    return case[int(ari-1)];
+    return grade_level[int(ari-1)];
 }
