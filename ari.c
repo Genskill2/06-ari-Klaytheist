@@ -16,7 +16,8 @@ string ari(string s)
         if((s[i] == '.' && s[i+1] == '\0') || (s[i] == '.' && s[i+1] == ' ') || s[i] == '!' || s[i] == '?')
             sentences++;
     }
-    words++;
+    if(characters > 0)
+        words++;
     ARI = ceil((4.71*(characters/words))+(0.5*(words/sentences)) - 21.43);
     if(ARI > 14)
         return "Professor";
