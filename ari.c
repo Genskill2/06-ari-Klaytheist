@@ -12,7 +12,7 @@ string ari(string s)
             characters++;
         if(s[i] == ' ')
             words++;
-        if(s[i] == '.' || s[i] == '!' || s[i] == '?')
+        if((s[i] == '.' && s[i+1] == '\0') || (s[i] == '.' && s[i+1] == ' ') || s[i] == '!' || s[i] == '?')
             sentences++;
     }
     words++;
@@ -43,6 +43,6 @@ string ari(string s)
         return "Twelfth Grade";
     else if(ARI == 13)
         return "College Student";
-    else if(ARI == 14)
+    else if(ARI >= 14)
         return "Professor";
 }
